@@ -7,7 +7,7 @@ from sys import argv
 @route('/hello/<name>')
 def index(name):
     return template('''
-    <b>Hello {{name}}</b>!', name=name
+    <b>Hello {{name}}!</b>, name=name
     ''')
 
 run(host='0.0.0.0', port=argv[1])  # keyrir server
