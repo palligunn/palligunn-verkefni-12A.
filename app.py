@@ -6,6 +6,6 @@ from sys import argv
 
 @route('/<name>')
 def index(name):
-    return '<center><h1>hello ' +name+'</h1></center>'
+    return '<center><h1>'+name+'er kominn á heroku</h1></center>'
 
 run(host='0.0.0.0', port=argv[1])  # keyrir server
