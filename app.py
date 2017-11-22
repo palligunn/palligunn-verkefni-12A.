@@ -6,6 +6,6 @@ from sys import argv
 
 @route('/')
 def index():
-    return template('<b>Palli er kominn á heroku</b>!', name=name)
+    return template('<b>Palli er kominn á heroku</b>!')
 
-run(host='0.0.0.0', port=argv[1], debug=True, reloader=True, app=app)  # keyrir server
+run(host='0.0.0.0', port=argv[1])  # keyrir server
