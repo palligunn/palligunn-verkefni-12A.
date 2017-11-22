@@ -4,10 +4,8 @@ from beaker.middleware import SessionMiddleware
 from sys import argv
 #Bryngeir Ari & Páll Gunnar
 
-@route('/hello/<name>')
+@route('/<name>')
 def index(name):
-    return template('''
-    <b>Hello {{name}}!</b>, name=name
-    ''')
+    return '<center><h1>hello ' +name+'</h1></center>'
 
 run(host='0.0.0.0', port=argv[1])  # keyrir server
